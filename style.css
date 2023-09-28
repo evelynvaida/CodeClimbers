@@ -6,14 +6,29 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   background: linear-gradient(45deg, #061de3, #e306ca);
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+
+.our_team {
+  margin-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
+h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 25px;
+}
 
 .card:hover {
   cursor: pointer;
