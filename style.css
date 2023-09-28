@@ -21,8 +21,9 @@ body {
 }
 
 .card {
-  height: 350px;
-  width: 500px;
+  height: 500px;
+  width: 350px;
+  margin: 15px;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
@@ -36,20 +37,21 @@ body {
   box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
   position: absolute;
   backface-visibility: hidden;
-}
-
-.back {
-  background-color: #3a3a3a;
-  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.back {
+  background-color: #a0d7af;
+  transform: rotateY(180deg);
   gap: 5rem;
 }
 
 
-.wrapper .our_team .team_member .member_img {
+.member_img {
   background: #e9e5fa;
   max-width: 190px;
   width: 100%;
@@ -60,13 +62,13 @@ body {
   cursor: pointer;
   position: relative;
 }
-.wrapper .our_team .team_member .member_img img {
+img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.wrapper .our_team .team_member h3 {
+h3 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
@@ -74,12 +76,13 @@ body {
   margin: 15px 0 0;
 }
 
-.wrapper .our_team .team_member span {
+span {
   font-size: 12px;
 } 
 
-.wrapper .our_team .team_member p {
+p {
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
 }
