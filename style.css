@@ -62,7 +62,7 @@ h1 {
 .back {
   background-color: #a0d7af;
   transform: rotateY(180deg);
-  gap: 5rem;
+  gap: 1rem;
 }
 
 
