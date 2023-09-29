@@ -101,3 +101,28 @@ p {
   line-height: 20px;
   text-align: center;
 }
+
+aside{
+
+  height: 100vh; /*80 v 70vh if not full page, depends which one is preferred */
+/*   padding-top: 10vh; */
+  width: 2vh; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+aside button{
+  color: transparent;
+  opacity: 0.06;
+  height: 100%;
+  float: left;
+}
+
+aside button:hover{
+  box-shadow: 5vh rgba(0, 0, 0, 0);
+  opacity: 0.30;
+}
