@@ -28,6 +28,11 @@ h1 {
   font-size: 48px;
   color: #fff;
   margin-bottom: 25px;
+  position: absolute;
+  top: 1em;
+/*   bottom: ;
+  right: ;    -> ezekkel lehet pakolgatni a pagen összevissza.
+  left: ; */
 }
 
 .card:hover {
