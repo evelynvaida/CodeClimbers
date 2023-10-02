@@ -4,18 +4,33 @@
   box-sizing: border-box;
 }
 
-body {
+#bodycodeclimbers{
   height: 100vh;
   overflow: scroll;
-  background: linear-gradient(45deg, #061de3, #e306ca);
+ /*  background: linear-gradient(45deg, #a6bacc, #057939); */
+  background: url(image/CodeClimbers.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   /* display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; */
 }
 
+#bodyotherteam {
+  height: 100vh;
+  overflow: scroll;
+  background: url(image/city-7094641_1920.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .teams {
-  margin-top: 170px;
+  margin-top: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,9 +40,9 @@ body {
 
 h1 {
   font-family: 'Yatra One', cursive;
-  font-size: 48px;
+  font-size: 55px;
   color: #fff;
-  margin-bottom: 25px;
+  margin: 30px;
   position: absolute;
   top: 1em;
 /*   bottom: ;
@@ -41,7 +56,7 @@ h1 {
 }
 
 .card {
-  height: 500px;
+  height: 550px;
   width: 300px;
   margin: 15px;
   position: relative;
@@ -61,18 +76,23 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 
+}
+
+.front {
+  background-color: #f0f0f3;
 }
 
 .back {
-  background-color: #a0d7af;
+  background-color: #f0f0f3;
   transform: rotateY(180deg);
-  gap: 1rem;
-}
+/*   gap: 1rem;
+ */}
 
 
 .member_img {
-  background: #e9e5fa;
+  background: #c4cfdd;
   max-width: 190px;
   width: 100%;
   height: 190px;
@@ -86,6 +106,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 h3 {
@@ -93,7 +114,7 @@ h3 {
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px;
-  margin: 15px 0 0;
+  margin: 25px 0 0;
 }
 
 span {
@@ -101,13 +122,13 @@ span {
 } 
 
 p {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
 }
 
-aside{
+#team_one {
 
   height: 100vh; /*80 v 70vh if not full page, depends which one is preferred */
 /*   padding-top: 10vh; */
@@ -117,23 +138,22 @@ aside{
   top: 0;
   right: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
-aside button{
+#team_one button {
   color: transparent;
-  opacity: 0.06;
+  opacity: 0.25;
   height: 100%;
   float: left;
 }
 
-aside button:hover{
-  box-shadow: 5vh rgba(0, 0, 0, 0);
-  opacity: 0.30;
+#team_one button:hover {
+/*   box-shadow: 5vh rgba(0, 0, 0, 0);
+ */  opacity: 0.40;
 }
 
 
-.other{
+#team_two {
 
   height: 100vh; /*80 v 70vh if not full page, depends which one is preferred */
 /*   padding-top: 10vh; */
@@ -143,17 +163,16 @@ aside button:hover{
   top: 0;
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
-.other button{
+#team_two button {
   color: transparent;
-  opacity: 0.06;
+  opacity: 0.20;
   height: 100%;
-  float: right;
+  float: left;
 }
 
-.other button:hover{
-  box-shadow: 5vh rgba(0, 0, 0, 0);
-  opacity: 0.30;
+#team_two button:hover {
+/*   box-shadow: 5vh rgba(255, 0, 0, 0.519);
+ */  opacity: 0.40;
 }
